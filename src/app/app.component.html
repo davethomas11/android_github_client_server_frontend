@@ -1,9 +1,14 @@
 <mat-toolbar color="primary">
-  <span>Dave's GitHub Client</span>
+  <span>{{title}}</span>
 </mat-toolbar>
 
-<div>
 <mat-card>
-  <button mat-raised-button color="accent">Login with GitHub</button>
+  Click this button to login to GitHub<br/>
+
+  <a href="{{githubUrl}}">
+    <button mat-raised-button color="accent">
+      <img src="assets/github_icon.svg" />  
+      <span>Login with GitHub</span>
+    </button>
+  </a>
 </mat-card>
-</div>
